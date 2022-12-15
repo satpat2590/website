@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal website showcasing my skills and interests",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "nodemon index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start": "tsc -p . && node public/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satpat2590/website.git"
+  },
+  "author": "Satyam Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satpat2590/website/issues"
+  },
+  "homepage": "https://github.com/satpat2590/website#readme",
+  "dependencies": {
+    "@types/express": "^4.17.15",
+    "@types/node": "^18.11.15",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
