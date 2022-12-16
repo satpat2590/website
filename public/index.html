@@ -10,45 +10,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/assets/">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   </head>
     
   <body>
-    <header>
-        <h1>Sat Patel</h1>
-    </header>
+       <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png">Sat P.</a>
+                <div class="nav-links" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                 </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav> 
 
-
-    <div class="divider"></div>
-
-
-
-    <div class="OS">
-     <h2>Operating System: Concepts & Lessons</h2>
-     <p>Operating Systems are different configurations of your computer which enable communication between the user and the actual system. Imbedded within Operating Systems are 5 main components:
-     <br>
-     <ul>
-        <li>Concurrency</li>
-        <li>Persistence</li>
-        <li>Resource Management</li>
-        <li>Virtualization</li>
-        <li>Security</li>
-     </ul>
-     </p>
-    </div>
+         <div class="os-desc">   
+             <h2>Operating System: Concepts & Lessons</h2>
+             <!---------Beginning of the OS Section of the Page--------->
+             <p>
+             Operating Systems are different configurations of your computer which enable communication between the user and the actual system. Operating System design must include these 5 features:
+             </p>
+             <br><br>
+             <ul>
+                 <li>Concurrency</li>
+                 <li>Persistence</li>
+                 <li>Resource Management</li>
+                 <li>Virtualization</li>
+                 <li>Security</li>
+             </ul>
+             <p>
+             Through this project of mine assigned by my college class (Operating Systems and Design), I was able to implement each of these 5 features within a client/server social media application.
+             <br><br>
+             Each phase will delve into the importance of the feature in reference. 
+             </p>
+         </div>
     
-    <div class="divider"></div>
+         <div class="timeline-desc">
+             <h2>World Timeline Project</h2>
+             <p>In an effort to understand the scope of humanity and life within this planet spanning billions of years, I've decided to map out historically important and interesting points in a world timeline.
+             <br><br>
+             My fascination with humanity extends to a mutual interest in philosophy, psychology, literature, and politics. My preliminary goals with this project was to map out human evolution and de-evolution throughout the ages through a timeline of Human-based events. However, my interests extend to human consciousness and psychology, which is shared by all organisms.
+             <br><br> 
+             So, the goal of this project now is to map out the history of our living Earth which will depict the story of Humanity as well.
+             </p>
+         </div>
 
-    <div class="timeline">
-     <h2>World Timeline Project</h2>
-     <p>In an effort to understand the scope of humanity and life within this planet spanning billions of years, I've decided to map out historically important and interesting points in a world timeline.
-     <br>
-     My fascination with humanity extends to a mutual interest in philosophy, psychology, literature, and politics. My preliminary goals with this project was to map out human evolution and de-evolution throughout the ages through a timeline of Human-based events. However, my interests extend to human consciousness and psychology, which is shared by all organisms.
-     <br> 
-     So, the goal of this project now is to map out the history of our living Earth which will depict the story of Humanity as well.
-     </p>
-    </div>
+        <div class="lutron-desc">
+            <h2>Lutron Device Diagnostics</h2>
+            <p>
+            Through a Lutron sponsored college co-op, I was lucky enough to work on an embedded device to cloud data pipeline within a team for roughly 10 months. Our project consisted of using various tools to autonomously "collect" device (lights, dimmers, buttons, etc...) diagnostic data, which would then signal the rest of the pipeline to handle the data.  
+            <br><br>
+            We sought to use Google's OpenThread libraries to allow communication between the devices and the processor. Each node connected to the thread network would represent a specific device, and data would be aggregated from each node, eventually leading into a push to the processor or a pull from the processor itself. 
+            <br><br> 
+        </div>
 
+       </section>
 
+       <script>
+            var navLinks = document.getElementById("navLinks");
+
+           function showMenu(){
+                          navLinks.style.right = "0";
+                      }
+
+           function hideMenu(){
+                          navLinks.style.right = "-200px";
+                      }
+       </script>
   </body>
 
 
