@@ -5,18 +5,12 @@
 }
 
 
-body{
-
-}
-
 .header{
-    min-height: 100vh; 
+    /* min-height: 100vh;  */
     width: 100%;
     background-position: center;
-    background-size: cover; 
-    position: relative;
+    position: absolute;
     font-size: 20px;
-
 }
 
 nav{
@@ -63,44 +57,41 @@ nav img{
 
 .os-desc{
     width: 90%;
-    color: black; 
     position: relative; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     /*text-align: center; */
 }
 
-.os-desc h2{
-    font-size: 40px;
-    text-decoration: underline; 
+
+
+.fullpage p{
+    margin: 10px 0 20px;
+    font-size: 15px;
 }
 
-.os-desc p {
-    margin: 10px 0 40px; 
-    font-size: 15px; 
-}
 
-.os-desc ul li {
-    font-size: 15px; 
+.fullpage ul li{
+    font-size: 15px;
     padding: 8px 12px; 
-    position: relative: 
+    position: relative; 
 }
 
 .about-info{
     width: 90%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,5%);
 }
 
 .about-edu{
     width: 90%;
-    position: absolute; 
+    position: relative; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,5%);
 }
 
 .timeline-desc{
@@ -109,7 +100,7 @@ nav img{
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-5%);
 }
 
 .lutron-desc{
@@ -118,12 +109,27 @@ nav img{
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-5%);
+}
+
+.button-set{
+    text-decoration: none;
+    border-style: inset;
+    border: black solid wrap; 
+}
+
+.fullpage a{
+    text-decoration: none;
+    color: black;
 }
 
 
 nav .fa{
     display: none; 
+}
+
+.fullpage h2{
+    font-size: 25px; 
 }
 
 @media(max-width: 700px){
