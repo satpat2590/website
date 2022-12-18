@@ -151,14 +151,67 @@ nav .fa{
     position: relative;
 }
 
+.highlights {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    padding: 1rem;
+}
+
 h2.button.bouncy {
     border: 2px solid;
     padding: 7px;
     box-shadow: 6px 4px 5px;
     border-width: 3px 3px; 
-    width: 45%;
+    width: 30%;
 
 }
+
+.card {
+    background-color: var(--dark-gray);
+    width: 250px;
+    height: 250px;
+    margin: 0.5rem;
+    box-shadow: 0 0 0.4rem 0.3rem #888;
+    transition: 0.25s;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 0 0.5rem 0.2rem #888;
+}
+
+.card img {
+    position: relative;
+    border-radius: 0.5rem;
+    width: inherit;
+}
+
+.card-info {
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #eee;
+    opacity: 0.9;
+    text-align: center;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    width: inherit;
+    height: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.poem{
+    text-align: center;
+    
+}
+
 
 @keyframes bouncy {
     0% {
@@ -215,4 +268,8 @@ h2.button.bouncy {
     .nav-links ul{
         padding: 20px;
     } 
+
+    h2.button.bouncy{
+        width: 90%;
+    }
 }
