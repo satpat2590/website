@@ -18,6 +18,12 @@ nav{
     padding: 2% 6%;
     justify-content: space-between; 
     align-items: center;
+    text-decoration-color: #FFFFFF;
+    color: black; 
+}
+
+nav.p{
+    color: black; 
 }
 
 nav a{
@@ -25,7 +31,7 @@ nav a{
 }
 
 nav img{
-    width: 75px;
+    width: 70px;
 }
 
 .nav-links{
@@ -61,7 +67,6 @@ nav img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-    /*text-align: center; */
 }
 
 
@@ -100,7 +105,16 @@ nav img{
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-5%);
+    transform: translate(-50%,0%);
+}
+
+.poetry-desc {
+    width: 90%;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .lutron-desc{
@@ -112,11 +126,11 @@ nav img{
     transform: translate(-50%,-5%);
 }
 
-.button-set{
+/* .button-set{
     text-decoration: none;
     border-style: inset;
     border: black solid wrap; 
-}
+} */
 
 .fullpage a{
     text-decoration: none;
@@ -130,6 +144,44 @@ nav .fa{
 
 .fullpage h2{
     font-size: 25px; 
+}
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}
+
+h2.button.bouncy {
+    border: 2px solid;
+    padding: 7px;
+    box-shadow: 6px 4px 5px;
+    border-width: 3px 3px; 
+    width: 45%;
+
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+    40% {
+        top: 0em
+    }
+    43% {
+        top: -0.9em
+    }
+    46% {
+        top: 0em
+    }
+    48% {
+        top: -0.4em
+    }
+    50% {
+        top: 0em
+    }
+    100% {
+        top: 0em;
+    }
 }
 
 @media(max-width: 700px){
