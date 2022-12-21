@@ -1,7 +1,12 @@
 *{
     margin: 0; 
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Didot';
     padding: 0; 
+}
+
+
+.fullpage{
+    background-color: white;
 }
 
 
@@ -20,6 +25,7 @@ nav{
     align-items: center;
     text-decoration-color: #FFFFFF;
     color: black; 
+    background-color: #C8B7A6;
 }
 
 nav.p{
@@ -28,11 +34,19 @@ nav.p{
 
 nav a{
     text-decoration: none; 
+    color: black; 
 }
 
 nav img{
-    width: 70px;
+    width: 50px;
 }
+
+
+/*
+    Styling options for the navigation links on the top of the page. 
+
+    Styling options also include the underlined maroon bottom for each nav-link. 
+*/
 
 .nav-links{
     flex: 1;
@@ -60,70 +74,45 @@ nav img{
     width: 100%;
 }
 
+/*
+    Styling for the different links with underlined bottoms.
 
-.os-desc{
-    width: 90%;
-    position: relative; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    Upon hovering over the link, a maroon underline will appear. 
+*/
+
+.undaline::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #702e01;
+    display: block;
+    transition: 0.5s;
 }
 
+.undaline:hover::after {
+    width: 7%;
+}
 
 
 .fullpage p{
     margin: 10px 0 20px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 
 .fullpage ul li{
-    font-size: 15px;
+    font-size: 17px;
     padding: 8px 12px; 
     position: relative; 
 }
 
-.about-info{
-    width: 90%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,5%);
-}
-
-.about-edu{
-    width: 90%;
-    position: relative; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,5%);
-}
-
-.timeline-desc{
+.section-div {
     width: 90%;
     color: black; 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,0%);
-}
-
-.poetry-desc {
-    width: 90%;
-    color: black;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-}
-
-.lutron-desc{
-    width: 90%;
-    color: black; 
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-5%);
 }
 
 /* .button-set{
@@ -143,7 +132,7 @@ nav .fa{
 }
 
 .fullpage h2{
-    font-size: 25px; 
+    font-size: 22px; 
 }
 
 .bouncy {
@@ -212,8 +201,12 @@ h2.button.bouncy {
     
 }
 
+.nav.a.h1{
+    display: flex; 
+}
 
-@keyframes bouncy {
+
+/* @keyframes bouncy {
     0% {
         top: 0em
     }
@@ -235,7 +228,7 @@ h2.button.bouncy {
     100% {
         top: 0em;
     }
-}
+} */
 
 @media(max-width: 700px){
     .os-desc h2{
