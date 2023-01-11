@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Switzer-Regular';
+    src: url('../styles/fonts/Switzer-Regular.woff2') format('woff2'),
+        url('../styles/fonts/Switzer-Regular.woff') format('woff'),
+        url('../styles/fonts/Switzer-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Switzer-Bold';
+    src: url('../styles/fonts/Switzer-Bold.woff2') format('woff2'),
+        url('../styles/fonts/Switzer-Bold.woff') format('woff'),
+        url('../styles/fonts/Switzer-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Basteleur-Moonlight';
+    src: url('../styles/basteleur-master/fonts/webfonts/Basteleur-Moonlight.woff2') format('woff2'),
+        url('../styles/basteleur-master/fonts/webfonts/Basteleur-Moonlight.woff') format('woff'),
+        url('../styles/basteleur-master/fonts/ttf/Basteleur-Moonlight.ttf') format('truetype');
+    font-weight: 100;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration-color: #FFFFFF;
+    color: black;
+    background-color: #C8B7A6;
+    text-decoration: none;
+    font-size: 15px;
+    /* font-family: 'Basteleur-Moonlight'; */
+    font-family: 'Didot';
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.undaline::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #702e01;
+    display: block;
+    transition: 0.5s;
+}
+
+.undaline:hover::after {
+    width: 105%;
+}
+
+.navbar h1 {
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
+    font-family: 'Switzer-Regular';
+}
+
+.navlinks a {
+    text-decoration: none;
+    text-decoration-color: #FFFFFF;
+    color: black;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+/* .navlinks ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #702e01;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li:hover::after {
+    width: 100%;
+} */

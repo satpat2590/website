@@ -1,0 +1,11 @@
+
+
+.main {
+    padding: 0rem 2rem 0rem 2rem;
+    font-family: Didot;
+}
+
+.overview ul li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

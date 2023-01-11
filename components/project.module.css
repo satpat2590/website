@@ -1,0 +1,30 @@
+/*
+List of elements in HTML:
+
+sectiondiv
+
+buttonbouncy
+
+fullpage
+*/
+
+.fullpage {
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0 0 1rem;
+    font-family: Didot;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+h2.buttonbouncy {
+    border: 2px solid;
+    padding: 7px;
+    box-shadow: 6px 4px 5px;
+    border-width: 3px 3px; 
+    width: 30%;
+
+}

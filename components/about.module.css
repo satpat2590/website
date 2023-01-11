@@ -1,0 +1,22 @@
+.fullpage {
+    font-size: 15px;
+}
+
+.sectiondiv {
+    width: 90%;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sectiondiv ul li {
+    margin: 1rem 0 0 1rem;
+}
+
+.fullpage h2 {
+    text-decoration: underline;
+}
