@@ -1,5 +1,7 @@
 
-
+/*
+h2, h4, and p
+*/
 .main {
     padding: 0rem 2rem 0rem 2rem;
     font-family: Didot;
@@ -8,4 +10,23 @@
 .overview ul li {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+
+@media (max-width: 700px) {
+    .main h2{
+        font-size: 13px;
+    }
+
+    .main h4 {
+        font-size: 10px;
+    }
+
+    .main p {
+        font-size: 9px;
+    }
+
+    .main ul li  {
+        font-size: 9px;
+    }
 }

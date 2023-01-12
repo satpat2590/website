@@ -43,25 +43,69 @@ export default function OS() {
                     Once Bob is able to decrypt the message and verify that the registration is valid (no duplicate user names, valid password, ...) then Bob is able to send a response to Alice's request. Bob's response is encrypted using base AES and then sent to Alice.
                     Note, we only consider Alice's information being sent to Bob as important. In a Facebook sense, would it really matter if someone were to intercept the response, as it only contains whether or not the request was successful or not.
                     <br></br><br></br>The only part that would warrant security measures is if the interception happened when Alice sent her personal user data to Bob. The person intercepting the message would find Alice's username, password, phone number much more important than the simple "OK" or "NO" response.
+                    <br></br><br></br>We learned how important it is to consider security within communication in applications. For Facebook, you want your username and password to be secure, because if it isn't, then anyone could simply find your personal user data and imitate you by signing in as you.
+                    <br></br><br></br>Facebook might be a simple example, so let's think about your Bank Account. Assume you just created an account for Bank of America and wanted to view your personal bank statements and other private monetary information. To access this information, you simply enter your username and password and then you have access. Without security, do you get why it would be chaotic to simply send vital user information without a system such as assymetric encryption?
                 </p>
             </div>
 
             <div className={styles.concurrency}>
                 <h2>Concurrency</h2>
                 <p>
-                    We learned how important it is to consider security within communication in applications. For Facebook, you want your username and password to be secure, because if it isn't, then anyone could simply find your personal user data and imitate you by signing in as you.
-                    Facebook might be a simple example, so let's think about your Bank Account. Assume you just created an account for Bank of America and wanted to view your personal bank statements and other private monetary information. To access this information, you simply enter your username and password and then you have access. Without security, do you get why it would be chaotic to simply send vital user information without a system such as assymetric encryption?
                     Now, let's look further at other elements of major applications such as Facebook and Bank of America. As of right now, we only viewed Alice and Bob as an example for this method of communication. Now imagine if Alice loves the app Facebook and wants all of her friends to join so that they can all stay in touch with each other and see their posts. Currently, Bob is only really able to handle one request at a time, since he is but one person!
                     For major applications like Facebook, simply having one Bob handle all users is a bit overkill. Load times would be ridiculous, and depending on how you schedule incoming requests, some users may not even get their chance at using the application until all others in the queue are handled.
-                    If you are Alice's friend, and you are asked to wait 30 minutes for all other users to send in their requests, then you would simply not use the application. You're better off calling each of your friends individually and getting updates about their personal lives.
+                    <br></br><br></br>If you are Alice's friend, and you are asked to wait 30 minutes for all other users to send in their requests, then you would simply not use the application. You're better off calling each of your friends individually and getting updates about their personal lives.
                     Consider if there was a way to handle tons and tons of requests in around the same time as each other.
-                    Introducing, C/C++ threads.
+                    <br></br><br></br>Introducing, C/C++ threads.
                     Using threads, we can create different processes of the same program, as many as you need! There is still an issue here. If we are talking about Bob still, then creating different "fork()"s, or different processes of Bob would be hard to manage once you pass a certain limit.
                     Bob is still human! He's not able to clone himself 1 million times! Not unless Bob is a super powerful set of servers built for such a strong app!
-                    Regardless, in order to handle 10 of Alice's friends, Bob can replicate his process 10 different times, to handle all of the requests. We designate a "Main Bob" who is a the leader thread, and is receiving each request. "Main Bob" then sends each request to his "Worker Bobs", which are his various replicated processes.
-                    "Worker Bobs" essentially handle each request (REQ, GET, SET, ALL) and then send back their corresponding responses. Now it isn't just "Main Bob" who is handling all of the work! This reduces the time it takes to send back the response (let's label this as 'latency'), which in turn provides joy to all of Alice's friends, who are able to chat with each other and edit their profile in real-time.
+                    <br></br><br></br>Regardless, in order to handle 10 of Alice's friends, Bob can replicate his process 10 different times, to handle all of the requests. We designate a "Main Bob" who is a the leader thread, and is receiving each request. "Main Bob" then sends each request to his "Worker Bobs", which are his various replicated processes.
+                    <br></br><br></br>"Worker Bobs" essentially handle each request (REQ, GET, SET, ALL) and then send back their corresponding responses. Now it isn't just "Main Bob" who is handling all of the work! This reduces the time it takes to send back the response (let's label this as 'latency'), which in turn provides joy to all of Alice's friends, who are able to chat with each other and edit their profile in real-time.
                     Thanks "Worker Bobs"!
                 </p>
+            </div>
+
+            <div className={styles.persistence}>
+                <h2>Persistence</h2>
+                <p>
+                    It's been a long day, we created a communication method for Alice and her friends, taking care of both Security and the ability to handle multiple people simultaneously.
+                    However, as Alice and the world head off to bed and wake up in the morning, the first thing to do is probably check this "Facebook" application. Perhaps Alice in 
+                    this case wants to speak to her friends and check for quick updates. 
+                    <br></br><br></br>
+                    However, upon entering the app, Alice is requested to make another account as it doesn't recognize who she is. Strange, didn't she make an account and add 
+                    her friends the day prior? 
+                    <br></br><br></br>
+                    We may have gotten Bob to handle requests and handle security, but did he ever learn how to store all of the collected information from the clients
+                    permanently? Once Bob goes to bed, he'll likely forget half or more of the information he exchanged the day after. What if Bob were to write down each
+                    of the client's requests and keep a journal of them? Next time Alice requests information, Bob can just look at the journal and verify her information. 
+                    <br></br><br></br>
+                    We've encountered an error with this approach! If all of the Worker Bobs write down the information in the ledger, then it would be way too many people 
+                    taking care of various requests. Imagine if Alice sent a request to change her profile description at the same time as one of her friends did to view her
+                    profile. 
+                    <br></br><br></br>
+                    Which Workers will change the entry first? Maybe a humanized version of Worker Bobs would civilly find a way to record entries, but I doubt a "fork()" call
+                    on a C++ program will. To combat this, we need each worker thread (process) to handle locks on each of the user's information. If one worker thread is 
+                    holding the lock for Alice's information, then no other worker thread can access that information until that thread releases it.
+                    <br></br><br></br>
+                    Nice, we handled one case of how persistence works directly with concurrency! Now, we need to find a way to reduce the amount of various changes in user
+                    information... 
+                    <br></br><br></br>
+                    What if we had each thread write changes in user information on another huge board, and each time a change is made to a specific user account, they would
+                    "cross out" the previous change to reflect the new one. So, instead of writing down each and every change of Alice's user profile into the main ledger, 
+                    we would only need to store whichever edit was the latest in the working session! So many trees saved! 
+                    <br></br><br></br>
+                    In the computer world, this loosely described mechanism is known as caching. Saving caches of recent information is beneficial for various reasons. 
+                    First, if anything happens to the "main ledger" or the database, you always have a cache of recent information to base fixes off of. 
+                    Also, overall "caching" is important because in order for the processor to handle information quickly, the closer it is to an L0 cache (processor), 
+                    then the quicker the computation! If we pull information from the "main ledger" or the HDD/SDD (L4), then it would be relatively slower than if 
+                    we were to store it in a caching system RAM (L1/L2). 
+                    <br></br><br></br>
+                    I won't go into the details of a beautiful caching system, as that quickly tends to get intricate, so <a href="https://www.cs.umd.edu/~meesh/cmsc411/website/projects/outer/hoc/nontech.htm">here's a fun article on it if you're interested!</a> 
+                </p>
+
+
+
+
+
             </div>
 
 

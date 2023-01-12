@@ -28,3 +28,27 @@ h2.buttonbouncy {
     width: 30%;
 
 }
+
+.sectiondiv ul li { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 600px) {
+
+    .fullpage {
+        margin: 0.5rem 0 0 0.5rem;
+    }
+    .sectiondiv h2{
+        font-size: 10px;
+    }
+
+    .sectiondiv ul li {
+        font-size: 8px;
+    }
+
+    .sectiondiv p {
+        font-size: 8px;
+    }
+}

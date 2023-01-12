@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-      <main>
+    <>
       <div className={styles.fullpage}>
       <div className={styles.container}> 
 
@@ -40,13 +40,13 @@ export default function Home() {
         <div className={styles.generaldesc}>
           <h3>A little about me...</h3>
           <ul>
-            <li>My passion for computers started when I was in High School, primarily to play PC games</li>
-              <ul>
-                <li>I built my first computer in my Senior year of High School</li>
-                <li>My first real programming language was Scratch, which I used to build an "actions" based game in my senior year of High School</li>
-              </ul>
             <li>I love traveling and learning about new cultures</li>
             <li>My curiosity extends to any field! I'm particularly intrigued by History and the Arts</li>
+            <li>My passion for computers started when I was in High School, primarily to play PC games</li>
+              <ul>
+                <li>I loved consoles as well, I started off with a Gameboy Advance!</li>
+                <li>My first real programming language was Scratch, which I used to build an "actions" based game in my senior year of High School</li>
+              </ul>
           </ul>
         </div>
 
@@ -102,6 +102,23 @@ export default function Home() {
           </Link>
         </div>
         </div>
-      </main>
+
+        <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+        }
+
+        @media (max-width: 700px) {
+          html,
+          body {
+            padding: 0; 
+            margin: 0;
+            overflow-x: hidden;
+          }
+        }
+    `}</style>
+      </>
   );
 }

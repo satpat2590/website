@@ -41,12 +41,12 @@ export default function Projects() {
             <br></br>
             <p>In an effort to understand the scope of humanity and life within this planet spanning billions of years,
                 I've decided to map out historically important and interesting points in a world timeline.
-                <br></br>
+                <br></br><br></br>
                 My fascination with humanity extends to a mutual interest in philosophy, psychology, literature, and
                 politics. My preliminary goals with this project was to map out human evolution and de-evolution
                 throughout the ages through a timeline of Human-based events. However, my interests extend to human
                 consciousness and psychology, which is shared by all organisms.
-                <br></br>
+                <br></br><br></br>
                 So, the goal of this project now is to map out the history of our living Earth which will depict the
                 story of Humanity as well.
             </p>
@@ -62,7 +62,7 @@ export default function Projects() {
                 pipeline within a team for roughly 10 months. Our project consisted of using various tools to
                 autonomously "collect" device (lights, dimmers, buttons, etc...) diagnostic data, which would then
                 signal the rest of the pipeline to handle the data.
-                <br></br>
+                <br></br><br></br>
                 We sought to use Google's OpenThread libraries to allow communication between the devices and the
                 processor. Each node connected to the thread network would represent a specific device, and data would
                 be aggregated from each node, eventually leading into a push to the processor or a pull from the
@@ -79,7 +79,7 @@ export default function Projects() {
             <p>
                 As a Sophomore in High School, I began to use my collection of experiences and emotions to create
                 various works of poetry.
-                <br></br>
+                <br></br><br></br>
                 I hope that through these words of mine, you'll also be able to share in my love of artistic literature.
             </p>
             <br></br>

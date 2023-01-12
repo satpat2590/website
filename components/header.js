@@ -2,35 +2,35 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import headstyle from './header.module.css';
-import { FaBars, FaTimes } from 'react-icons/fa';
+// import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 export default function Header( {children} ) {
 
-    var stylinn = {
-        div: {
-            right: "0px"
-        } 
-    }
+    // var stylinn = {
+    //     div: {
+    //         right: "0px"
+    //     } 
+    // }
 
-    const showMenu = () => {
-        // stylinn = {
-        //     div: {
-        //         right: "-200px"
-        //     }
-        // }
-        console.log("Rawr.. Hahah im a faggot!");
-    };
+    // const showMenu = () => {
+    //     // stylinn = {
+    //     //     div: {
+    //     //         right: "-200px"
+    //     //     }
+    //     // }
+    //     console.log("Rawr.. Hahah im a faggot!");
+    // };
 
-    const hideMenu = () => {
-        // stylinn = {
-        //     div: {
-        //         right: "0px"
-        //     }
-        // }
+    // const hideMenu = () => {
+    //     // stylinn = {
+    //     //     div: {
+    //     //         right: "0px"
+    //     //     }
+    //     // }
 
-        console.log("I'm scarily gay!");
-    };
+    //     console.log("I'm scarily gay!");
+    // };
 
     return (
         <>
@@ -41,7 +41,7 @@ export default function Header( {children} ) {
                     <h1>Sat P.</h1>
                 </Link>
                 <div className={headstyle.navlinks} id="navLink">
-                <FaTimes className={headstyle.fa} onClick={() => { hideMenu() }}/>
+                {/* <FaTimes className={headstyle.fa} onClick={() => { hideMenu() }}/> */}
                 {/* <i class="fa fa-times" onClick={(e) => { hideMenu(e) }}></i> */}
                     <ul>
                         <li><Link href="/about" className={headstyle.undaline}>about</Link></li>
@@ -49,7 +49,7 @@ export default function Header( {children} ) {
                         <li><Link href="/contact" className={headstyle.undaline}>contact</Link></li>
                     </ul>
                 </div>
-                <FaBars className={headstyle.fa} onClick={() => { showMenu() }}/>
+                {/* <FaBars className={headstyle.fa} onClick={() => { showMenu() }}/> */}
                 {/* <i class="fa fa-bars" onClick={(e) => { showMenu(e) }}></i> */}
             </nav> 
         </div>
