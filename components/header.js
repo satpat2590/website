@@ -3,11 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import headstyle from './header.module.css';
 
-/*
-<i class="fa fa-times" onclick="hideMenu()"></i>
-<i class="fa fa-bars" onclick="showMenu()"></i>
-
-*/
 
 export default function Header( {children} ) {
 
