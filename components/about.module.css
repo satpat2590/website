@@ -20,3 +20,20 @@
 .fullpage h2 {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+
+    .sectiondiv {
+        font-size: 7px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sectiondiv h2 {
+        font-size: 9px;
+    }
+
+    .sectiondiv ul li {
+        margin-left: -1rem;
+    }
+}

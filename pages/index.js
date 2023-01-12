@@ -19,7 +19,11 @@ export default function Home() {
 
         <div className={styles.portfolio}>
         <h3 className={styles.title}>
-          Welcome to my website!<br></br><br></br> I've put together a collection of personal projects and interests for 
+          Welcome to my website!
+        </h3>
+        <br></br>
+        <h3>
+          I've put together a collection of personal projects and interests for 
           people to check out as well as for my own benefit. 
         </h3>
 

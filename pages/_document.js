@@ -4,6 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
+                <title>Sat P.</title>
                 <link rel="icon" href="/images/logo.png" />
                 <link rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"

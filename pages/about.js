@@ -1,17 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Head from 'next/head';
 import styles from '../components/about.module.css';
 
 export default function About() {
     return (
-        <div>
-            <Head>
-                <title>General About Page!</title> 
-
-            </Head>
-
+        <div className={styles.mainn}>
          <section className={styles.fullpage}>
 
             <div className={styles.sectiondiv}>

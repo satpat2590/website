@@ -94,6 +94,10 @@
     color: black;
 }
 
+.fa {
+    display: none;
+}
+
 /* .navlinks ul li::after {
     content: '';
     width: 0;
@@ -107,3 +111,9 @@
 .navlinks ul li:hover::after {
     width: 100%;
 } */
+
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 9px; 
+    }
+}

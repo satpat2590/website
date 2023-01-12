@@ -7,10 +7,6 @@ export default function Layout ( {children }) {
 
     return (
         <>
-      {/* <Head>
-        <title>Sat P.</title>
-      </Head> */}
-
       <Header />
 
         <main>{children}</main>
