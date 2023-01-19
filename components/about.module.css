@@ -24,13 +24,13 @@
 @media (max-width: 600px) {
 
     .sectiondiv {
-        font-size: 7px;
+        font-size: 10px;
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
     .sectiondiv h2 {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .sectiondiv ul li {

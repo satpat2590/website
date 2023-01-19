@@ -14,20 +14,19 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className={styles.fullpage}>
+    <div className={styles.fullpage}>
       <div className={styles.container}> 
-
         <div className={styles.portfolio}>
-        <h3 className={styles.title}>
-          Welcome to my website!
-        </h3>
-        <br></br>
-        <h3>
-          I've put together a collection of personal projects and interests for 
-          people to check out as well as for my own benefit. 
-        </h3>
+          <h3 className={styles.title}>
+            Welcome to my website!
+          </h3>
+          <br></br>
+          <p>
+            I've put together a collection of personal projects and interests for 
+            people to check out as well as for my own benefit. 
+          </p>
 
-          <h3>Here are links to my external portfolio:</h3>
+          <p><strong>Here are links to my external portfolio:</strong></p>
           <ul>
             <li><a href="https://github.com/satpat2590" className={styles.undaline}><p>Github</p></a></li>
             <li><a href="linkedin.com/satpat2590" className={styles.undaline}><p>LinkedIn</p></a></li>
@@ -49,61 +48,55 @@ export default function Home() {
               </ul>
           </ul>
         </div>
-
-        <div className={styles.vertical}></div>
-
-        <div className={styles.lifeprojects}>
-          <h3 className={styles.lifetitle}>Life Projects</h3>
-
-
-          <div className={styles.phototry}>
-            <button className={styles.button89} role="button"><Image src="/photo.svg"
-                alt="Book image"
-                height="100"
-                width="100"
-              ></Image><h3>Photography</h3></button>
-          </div>
-          <div className={styles.phototry2}>
-            <Link href="/projects/poetry">
-          <button className={styles.button89} role="button">              <Image src="/book.svg"
-                alt="Book image"
-                height="100"
-                width="100"
-              ></Image><h3>Poetry</h3></button>
-            </Link>
-          </div>
-        </div>
-  
       </div>
 
-        <div className={styles.grid}>
-
-          <Link href="/about" className={styles.card}>
-            <h3>About &rarr;</h3>
-            <p>More information on me, my academics, and my overall life journey!</p>
-          </Link>
-<hr></hr>
-
-          <Link href="/projects" className={styles.card}>
-            <h3>Projects &rarr;</h3>
-            <p>Take a look at some of the projects I've worked on or are currently in the progress of working on</p>
-          </Link>
-
-          <Link href="/introzone" className={styles.card}>
-            <h3>CS Beginner/Refresh Zone &rarr;</h3>
-            <p>Discover some small projects with extensive documentation meant to entice learning and also refreshing concepts</p>
-          </Link>
-
-          <Link href="/contact" className={styles.card}>
-            <h3>Contact &rarr;</h3>
-            <p>
-              Have any questions or wish to send me a message? Click here to do so! 
-            </p>
-          </Link>
+      <div className={styles.lifecolumn}>
+          <h3 className={styles.lifetitle}>Get to know me!</h3>
+          <div className={styles.lifeprojects}>
+            <div className={styles.phototry}>
+              <button className={styles.button89} role="button">
+                <Image src="/photo.svg"
+                  alt="Book image"
+                  height="100"
+                  width="100"
+                ></Image><h3>Photos</h3></button>
+            </div>
+            <div className={styles.phototry}>
+              <Link href="/projects/poetry">
+              <button className={styles.button89} role="button"> 
+                <Image src="/book.svg"
+                  alt="Book image"
+                  height="100"
+                  width="100"
+                ></Image><h3>Poetry</h3></button>
+              </Link>
+            </div>
+          
+          <div className={styles.phototry}>
+              <Link href="/projects">
+              <button className={styles.button89} role="button"> 
+                <Image src="/images/github.svg"
+                  alt="Book image"
+                  height="100"
+                  width="100"
+                ></Image><h3>Projects</h3></button>
+              </Link>
+            </div>
+            <div className={styles.phototry}>
+              <Link href="/introzone">
+              <button className={styles.button89} role="button"> 
+                <Image src="/images/github.svg"
+                  alt="Book image"
+                  height="100"
+                  width="100"
+                ></Image><h3>CS Blobs</h3></button>
+              </Link>
+            </div>
+            </div>
         </div>
-        </div>
+    </div>
 
-        <style jsx global>{`
+      <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -119,6 +112,6 @@ export default function Home() {
           }
         }
     `}</style>
-      </>
+    </>
   );
 }

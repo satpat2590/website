@@ -41,14 +41,15 @@ h2.buttonbouncy {
         margin: 0.5rem 0 0 0.5rem;
     }
     .sectiondiv h2{
-        font-size: 10px;
+        font-size: 13px;
+        width: 70%;
     }
 
     .sectiondiv ul li {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .sectiondiv p {
-        font-size: 8px;
+        font-size: 10px;
     }
 }

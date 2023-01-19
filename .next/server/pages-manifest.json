@@ -2,11 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/projects": "pages/projects.js",
-  "/about": "pages/about.js",
-  "/projects/os": "pages/projects/os.js",
-  "/projects/poems/darkness": "pages/projects/poems/darkness.js",
-  "/": "pages/index.js",
-  "/projects/poetry": "pages/projects/poetry.js",
-  "/projects/poems/unattainable": "pages/projects/poems/unattainable.js"
+  "/": "pages/index.js"
 }
