@@ -35,7 +35,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.sectiondiv}>
-            <Link href="timeline.html" className={styles.link}>
+            <Link href="/projects/timeline" className={styles.link}>
                 <h2 className={styles.buttonbouncy}>World Timeline Project</h2>
             </Link>
             <br></br>
@@ -53,7 +53,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.sectiondiv}>
-            <Link href="lutron.html" className={styles.link}>
+            <Link href="/projects/lutron" className={styles.link}>
                 <h2 className={styles.buttonbouncy}>Lutron Device Diagnostics</h2>
             </Link>
             <br></br>

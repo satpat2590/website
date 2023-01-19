@@ -1,0 +1,13 @@
+
+
+.gallery {
+    display: flex; 
+    flex-flow: row wrap; 
+    width: inherit;
+}
+
+.gallery img {
+    margin: auto;
+    margin-top: 2vh;
+    border: solid;
+}

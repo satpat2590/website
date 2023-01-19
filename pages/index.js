@@ -54,12 +54,14 @@ export default function Home() {
           <h3 className={styles.lifetitle}>Get to know me!</h3>
           <div className={styles.lifeprojects}>
             <div className={styles.phototry}>
+              <Link href="/photo">
               <button className={styles.button89} role="button">
                 <Image src="/photo.svg"
                   alt="Book image"
                   height="100"
                   width="100"
                 ></Image><h3>Photos</h3></button>
+              </Link>
             </div>
             <div className={styles.phototry}>
               <Link href="/projects/poetry">
@@ -85,7 +87,7 @@ export default function Home() {
             <div className={styles.phototry}>
               <Link href="/introzone">
               <button className={styles.button89} role="button"> 
-                <Image src="/images/github.svg"
+                <Image src="/images/code.svg"
                   alt="Book image"
                   height="100"
                   width="100"
