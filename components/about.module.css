@@ -1,5 +1,12 @@
+.mainn {
+    display: flex; 
+    flex-flow: column wrap;
+}
+
+
 .fullpage {
-    font-size: 15px;
+    font-size: 22px;
+    font-family: 'Switzer-Regular';
 }
 
 .sectiondiv {
@@ -18,7 +25,7 @@
 }
 
 .fullpage h2 {
-    text-decoration: underline;
+    color: darkgreen;
 }
 
 @media (max-width: 600px) {

@@ -8,4 +8,6 @@
 
 # EDIT THIS SCRIPT AT WILL TO CORRESPOND WITH YOUR PREFERENCES
 
-tar -xvf ../../../Downloads/$1.zip && mv ../../../Downloads/$1 .
+# tar -x ../../../Downloads/$1.zip && mv ../../../Downloads/$1 .
+
+mv ../../Downloads/$1 .

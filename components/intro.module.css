@@ -1,0 +1,49 @@
+.fullpage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: inherit;
+    font-family: 'Switzer-Regular';
+    box-sizing: border-box;
+    margin: 0 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.fullpage a {
+    text-decoration: none;
+    color: black;
+    right: 500px;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.container {
+    height: 250px;
+    width: 200px;
+    margin: 2rem 2rem;
+    font-size: 15px;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container h3 {
+    text-decoration: underline;
+}
+
+.container:hover {
+    background-color: rgb(235, 165, 0);
+    transition: 0.5s;
+}
+
+.date {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}

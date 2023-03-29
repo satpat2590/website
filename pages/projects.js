@@ -7,11 +7,11 @@ import styles from '../components/project.module.css'
 export default function Projects() {
     return (
         <>
-            <section className={styles.fullpage}>
+            
+        <section className={styles.fullpage}>
         <div className={styles.sectiondiv}>
-            <br></br>
             <Link href="/projects/os" className={styles.link}>
-                <h2 className={styles.buttonbouncy}>Operating System Design</h2>
+                <h2 className={styles.buttonbouncy}>OS Design</h2>
             </Link>
             <br></br>
 
@@ -54,21 +54,22 @@ export default function Projects() {
 
         <div className={styles.sectiondiv}>
             <Link href="/projects/lutron" className={styles.link}>
-                <h2 className={styles.buttonbouncy}>Lutron Device Diagnostics</h2>
+                <h2 className={styles.buttonbouncy}>AI Creations!</h2>
             </Link>
             <br></br>
             <p>
-                Through a Lutron sponsored college co-op, I was lucky enough to work on an embedded device to cloud data
-                pipeline within a team for roughly 10 months. Our project consisted of using various tools to
-                autonomously "collect" device (lights, dimmers, buttons, etc...) diagnostic data, which would then
-                signal the rest of the pipeline to handle the data.
+                With the advent of AI, creating new and interesting things has become much easier. I've decided to 
+                use ChatGPT to create various JavaScript functions that can be displayed on this website, and also 
+                the prompts used to do so. 
                 <br></br><br></br>
-                We sought to use Google's OpenThread libraries to allow communication between the devices and the
-                processor. Each node connected to the thread network would represent a specific device, and data would
-                be aggregated from each node, eventually leading into a push to the processor or a pull from the
-                processor itself.
-                <br></br>
-                </p>
+                This website is currently written in React JS, so it incorporates a different understanding of JavaScript
+                capabilities. For example, simply asking ChatGPT to create a JS function that manipulates certain HTML 
+                elements within your website won't work because React JS is a framework that uses JSX, which is a variant 
+                of HTML/JS. 
+                <br></br><br></br>
+                Hopefully these prompts and functions will be able to help you in your own projects, both in upgrading
+                pre-existing designs or to start a new design completely! 
+            </p>
         </div>
 
         <div className={styles.sectiondiv}>

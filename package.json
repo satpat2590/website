@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "highlight.js": "^11.7.0",
+    "marked": "^4.2.12",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",

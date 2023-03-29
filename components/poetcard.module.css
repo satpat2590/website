@@ -13,29 +13,29 @@
     flex-wrap: wrap;
     background-color: var(--white);
     padding: 1rem; */
-    flex-flow: row wrap;
     display: flex;
+    flex-flow: row wrap;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     box-sizing: border-box;
     border-color: #FFFF;
-    background-color: #FFFF;
+    justify-content: center;
     text-align: center;
-    margin: 2rem 0 0 4rem;
 }
 
 
 .card {
-    width: 250px;
+    width: 350px;
     height: 150px;
     margin: 0.5rem;
     box-shadow: 0 0 0.4rem 0.3rem #888;
     transition: 0.25s;
     border-radius: 0.5rem;
     position: relative;
-
+    background-color: #FFFF;
     flex: 0 0 33.333%;
-    display: flex;
     padding: 15px; /* gutter width */
     border-width: 0px;
+    display: flex;
 
 
     /* border-radius: 0px; */

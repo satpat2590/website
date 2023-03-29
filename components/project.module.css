@@ -11,8 +11,8 @@ fullpage
 .fullpage {
     text-decoration: none;
     color: black;
-    margin: 1rem 0 0 1rem;
-    font-family: Didot;
+    font-family: 'Switzer-Regular';
+    font-size: 22px;
 }
 
 .link {
@@ -26,12 +26,17 @@ h2.buttonbouncy {
     box-shadow: 6px 4px 5px;
     border-width: 3px 3px; 
     width: 30%;
+    font-family: Didot;
 
 }
 
 .sectiondiv ul li { 
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.sectiondiv {
+    margin: 3rem 1rem;
 }
 
 
