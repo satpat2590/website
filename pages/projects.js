@@ -53,7 +53,7 @@ export default function Projects() {
         </div>
 
         <div className={styles.sectiondiv}>
-            <Link href="/projects/lutron" className={styles.link}>
+            <Link href="/projects/aimade" className={styles.link}>
                 <h2 className={styles.buttonbouncy}>AI Creations!</h2>
             </Link>
             <br></br>

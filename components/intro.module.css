@@ -31,6 +31,7 @@
     border-radius: 3rem;
     display: flex;
     flex-flow: row wrap;
+    background-color: rgba(144, 238, 144, 0.3);
 }
 
 .container h3 {

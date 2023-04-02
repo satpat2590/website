@@ -20,28 +20,24 @@ export default function Layout ( { children }) {
         </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/images/logo.png" alt="Sat's Logo" className={styles.logo} />
-        </a>
-        <div>
+        <div className={styles.footerfull}>
           <a
-            href='https://github.com/satpat2590'  
+            href='https://github.com/satpat2590' 
+            className={styles.logo}
           >
-            <img src="/images/logo.png" alt="Sat's Logo" className={styles.logo} />
+            <img src="/github-mark.svg" alt="Sat's Logo" className={styles.logo}/>
           </a>
           <a
-            href='https://linkedin.com/satpat2590'  
+            href='https://www.linkedin.com/in/satyampatel56/'  
+            className={styles.logo}
           >
-            <img src="/images/logo.png" alt="Sat's Logo" className={styles.logo} />
+            <img src="/linkedin.svg" alt="Sat's Logo" className={styles.logo}/>
           </a>
           <a
-            href='https://gitlab.com/satpat2590'  
+            href='https://www.instagram.com/satpat_/'  
+            className={styles.logo}
           >
-            <img src="/images/logo.png" alt="Sat's Logo" className={styles.logo} />
+            <img src="/instagram.svg" alt="Sat's Logo" className={styles.logo}/>
           </a>
         </div>
       </footer>

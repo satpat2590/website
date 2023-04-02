@@ -9,7 +9,6 @@ export default function Poetry() {
         <div>
             <Head>
                 <title></title> 
-
             </Head>
             <Poetcard/>
 

@@ -45,14 +45,14 @@
 
 .navbar {
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
     text-decoration-color: #FFFFFF;
     color: black;
     background-color: rgba(200, 183, 166, 0.7);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     /* font-family: 'Basteleur-Moonlight'; */
     font-family: 'Didot';
 }
@@ -117,6 +117,10 @@
 
 @media (max-width: 500px) {
     .navbar {
-        font-size: 13px; 
+        font-size: 11px; 
+    }
+
+    .navlinks{
+        font-size: 11px;
     }
 }

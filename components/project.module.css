@@ -45,16 +45,21 @@ h2.buttonbouncy {
     .fullpage {
         margin: 0.5rem 0 0 0.5rem;
     }
+
+    .sectiondiv {
+        margin: 2rem 1rem;
+    }
+    
     .sectiondiv h2{
-        font-size: 13px;
+        font-size: 15px;
         width: 70%;
     }
 
     .sectiondiv ul li {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .sectiondiv p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }

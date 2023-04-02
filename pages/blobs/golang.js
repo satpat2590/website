@@ -66,6 +66,7 @@ export default function GoLang() {
             <div className={styles.fullpage}>
 
                 <div className={styles.container}>
+                    <h1 style={{margin: '1rem', fontSize: '25px'}}>Golang Web Scraper Tutorial</h1>
                     <p>
                         In this post, you'll learn how to use Golang in order to retrieve information
                         from a website. This requires the module <a href="http://go-colly.org/">colly </a>

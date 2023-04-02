@@ -9,6 +9,7 @@
   display: flex; 
   flex-flow: row;
   margin: 1rem 3rem;
+  justify-content: space-between; 
 }
 
 .introduction img {
@@ -113,14 +114,21 @@
 }
 
 .logo {
-  height: 1rem;
+  height: 1.5rem;
+  margin: 0 3rem;
 }
 
+.footerfull {
+  display: flex; 
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
 /*
   Anything from 600px and below will take this 
   media query below. 
 */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .fullpage {
     font-size: 18px; 
     width: 100%;
@@ -204,6 +212,23 @@
     margin-top: 2vw;
   }
 
+  .aipage h1 {
+    font-size: 22px;
+  }
+
+  .aipage h2 {
+    font-size: 18px;
+  }
+
+  .aipage p{
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 1.3rem;
+    margin: 0 2rem;
+  }
+  
 }
 
 /*  
@@ -237,6 +262,15 @@
   }
   .personal {
     font-size: 40px;
+  }
+
+  .aipage p{
+    font-size: 13px;
+  }
+
+  .logo {
+    height: 1.5rem;
+    margin: 0 1rem;
   }
 }
 

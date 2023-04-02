@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styles from './footprint.module.css';
 
 const options = {
   method: "GET",
@@ -38,19 +39,19 @@ const FootprintData = () => {
   }, []);
 
   return (
-    <div style={{ overflowX: 'auto'}}>
-    <table style={{ borderCollapse: 'collapse', width: 'calc(100vw - 75px)', overflowX: 'auto'}}>
+    <div className={styles.mainTable}>
+    <table className={styles.actualTable}>
       <thead>
-        <tr style={{ backgroundColor: 'darkgreen', color: 'white' }}>
-          <th style={{ padding: '10px', border: '1px solid black' }}>Country Name</th>
-          <th style={{ padding: '10px', border: '1px solid black' }}>Population</th>
-          <th style={{ padding: '10px', border: '1px solid black' }}>GDP</th>
-          <th style={{ padding: '10px', border: '1px solid black' }}>HDI</th>
+        <tr className={styles.headrow}>
+          <th className={styles.headcell}>Country Name</th>
+          <th className={styles.headcell}>Population</th>
+          <th className={styles.headcell}>GDP</th>
+          <th className={styles.headcell}>HDI</th>
         </tr>
       </thead>
       <tbody>
         {data.map((country, index) => (
-          <tr key={index} style={{ backgroundColor: index % 2 === 0 ? 'lightbrown' : 'white' }}>
+          <tr key={index} className={styles.rowactual}>
             <td style={{ padding: '10px', border: '1px solid black' }}>{country.countryName}</td>
             <td style={{ padding: '10px', border: '1px solid black' }}>{country.Population}</td>
             <td style={{ padding: '10px', border: '1px solid black' }}>{country.GDP}</td>

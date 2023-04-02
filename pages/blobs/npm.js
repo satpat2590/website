@@ -108,7 +108,7 @@ export default function NPM() {
 
     return(
     <>
-    <div className={styles.fullpage}>
+    <div className={styles.mainwebsitepage}>
     <p>
     Let's learn how to use express within JavaScript in order to route different 
     files onto the web. 

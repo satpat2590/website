@@ -69,7 +69,7 @@ export default function Intro() {
                     </div>
                 </Link>
 
-                <Link href='/blobs/websitecreation'>
+                <Link href='/blobs/website'>
                     <div className={styles.container}>
                         <h3>Website Creation</h3>
                         <div className={styles.desc}>

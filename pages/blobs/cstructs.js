@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { marked } from 'marked'; 
 import hljs from 'highlight.js';
+import styles from '../../components/blobs.module.css';
 
 
 
@@ -52,8 +53,7 @@ export default function CStructs() {
 
     return(
         <>
-        <div>
-            <div>
+            <div className={styles.mainwebsitepage}>
                 <p>
                     Structs are used in almost every programming language as a way to group various 
                     types together in a single "object". Structs contain fields which refer to various types, 
@@ -101,7 +101,6 @@ export default function CStructs() {
 
 
 
-        </div>
         
         </>
 
